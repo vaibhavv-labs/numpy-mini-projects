@@ -1,87 +1,74 @@
-# 📊 Student Marks Analyzer
+<div align="center">
 
-A mini data analysis project built using **NumPy** to analyze student marks across multiple subjects.
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Array%20Computing-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Project](https://img.shields.io/badge/Project-Mini%20Project-FF6B6B?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Complete-00C853?style=for-the-badge)
+
+<br/>
+
+> 📊 A beginner-friendly NumPy mini project for analyzing student marks using matrix operations, statistics, and boolean filtering.
+
+<br/>
+
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Student+Marks+Analyzer&fontSize=30&fontColor=ffffff&animation=fadeIn&desc=NumPy+Mini+Project&descSize=15&descAlignY=78)
+
+</div>
 
 ---
 
-## 🔍 What This Project Does
+# 🎯 Project Overview
 
-- Stores student marks in a 2D NumPy matrix (Students × Subjects)
-- Calculates **average marks per student** (row-wise)
-- Calculates **subject-wise average** (column-wise)
-- Finds the **topper** using argmax
-- Identifies **failed students** using boolean filtering
-- Assigns **grades** (A, B, C, Fail) based on average
+This project demonstrates how NumPy can be used for:
+
+- Matrix operations
+- Statistical analysis
+- Boolean filtering
+- Student performance analysis
+
+The project analyzes marks stored in a NumPy matrix and performs different operations such as average calculation, topper detection, failed student filtering, and grade generation.
 
 ---
 
-## 🛠️ Tech Stack
+# ✨ Features
 
-- Python 3
+| Feature | Description |
+|----------|-------------|
+| 📊 Student Average | Calculate average marks of each student |
+| 📚 Subject Average | Calculate subject-wise average |
+| 🏆 Topper Detection | Find highest-performing student |
+| ❌ Failed Students | Detect students scoring below passing marks |
+| 🎓 Grade System | Generate grades using conditions |
+| 🔢 NumPy Operations | Use matrix/statistical operations |
+
+---
+
+# 🧠 Concepts Used
+
+- NumPy Arrays
+- Matrix Operations
+- Axis Concept
+- Boolean Masking
+- Statistical Functions
+- Indexing & Filtering
+
+---
+
+# 🛠️ Tech Stack
+
+- Python
 - NumPy
+- Jupyter Notebook
 
 ---
 
-## 📁 Project Structure
-
-```
-student_marks_analyzer/
-│
-├── student_marks_analyzer.ipynb   # Main notebook
-└── README.md                      # Project info
-```
-
----
-
-## ▶️ How to Run
+# 🚀 How to Run
 
 ```bash
-# Install NumPy if not installed
+git clone https://github.com/YOUR_USERNAME/numpy-student-marks-analyzer.git
+
+cd numpy-student-marks-analyzer
+
 pip install numpy
 
-# Open Jupyter Notebook
-jupyter notebook student_marks_analyzer.ipynb
-```
-
----
-
-## 📌 Concepts Used
-
-| Concept | Usage |
-|--------|-------|
-| np.array() | 2D marks matrix banana |
-| np.mean(axis=1) | Per student average |
-| np.mean(axis=0) | Per subject average |
-| np.argmax() | Topper find karna |
-| np.any() | Failed students detect karna |
-| Boolean Indexing | Condition-based filtering |
-| f-strings | Clean output formatting |
-
----
-
-## 📊 Sample Output
-
-```
-Student Grades:
-Student 0 --> Average: 84.33 --> Grade: B
-Student 1 --> Average: 53.67 --> Grade: C
-Student 2 --> Average: 91.67 --> Grade: A
-Student 3 --> Average: 37.67 --> Grade: Fail
-Student 4 --> Average: 69.67 --> Grade: C
-```
-
----
-
-## 👨‍💻 Author
-
-**Vaibhav Bhoyate**  
-BE AIDS Student | Aspiring AI Engineer  
-📍 Maharashtra, India
-
----
-
-## 🚀 Next Steps
-
-- Add student names instead of indexes
-- Export results to CSV using Pandas
-- Visualize grades using Matplotlib
+jupyter notebook
